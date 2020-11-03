@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Front Hazard Avoidance Camera",
+    "abbr": "fhaz",
+    "curiousity": true,
+    "opportunity": true,
+    "spirit": true
+  },
+  {
+    "name": "Rear Hazard Avoidance Camera",
+    "abbr": "rhaz",
+    "curiousity": true,
+    "opportunity": true,
+    "spirit": true
+  },
+  {
+    "name": "Mast Camera",
+    "abbr": "mast",
+    "curiousity": true,
+    "opportunity": false,
+    "spirit": false
+  },
+  {
+    "name": "Chemistry and Camera Complex",
+    "abbr": "CHEMCAM",
+    "curiousity": true,
+    "opportunity": false,
+    "spirit": false
+  },
+  {
+    "name": "Mars Hand Lens Imager",
+    "abbr": "MAHLI",
+    "curiousity": true,
+    "opportunity": false,
+    "spirit": false
+  },
+  {
+    "name": "Mars Descent Imager",
+    "abbr": "MARDI",
+    "curiousity": true,
+    "opportunity": false,
+    "spirit": false
+  },
+  {
+    "name": "Navigation Camera",
+    "abbr": "NAVCAM",
+    "curiousity": true,
+    "opportunity": true,
+    "spirit": true
+  },
+  {
+    "name": "Panoramic Camera",
+    "abbr": "PANCAM",
+    "curiousity": false,
+    "opportunity": true,
+    "spirit": true
+  },
+  {
+    "name": "Miniature Thermal Emission Spectrometer (Mini-TES)",
+    "abbr": "MINITES",
+    "curiousity": false,
+    "opportunity": true,
+    "spirit": true
+  }
+]

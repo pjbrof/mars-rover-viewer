@@ -1,0 +1,23 @@
+.control-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 60px;
+  z-index: 9999;
+  color: #fff;
+}
+
+.control-panel button {
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.control-panel button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
