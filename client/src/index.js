@@ -7,7 +7,7 @@ import Slideshow from "./Slideshow.jsx";
 import DisplayPanel from "./DisplayPanel.jsx";
 // import ControlPanel from "./ControlPanel.jsx";
 
-import descriptions from "../../server/sources/descriptions.json";
+import descriptions from "./sources/descriptions.json";
 
 import "./app.css";
 

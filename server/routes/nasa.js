@@ -22,7 +22,7 @@ router.get("/photos", async (req, res) => {
 router.get("/manifest", async (req, res) => {
   try {
     const manifestFile = fs.readFileSync(
-      path.join(__dirname, "../../manifest.json"),
+      path.join(__dirname, "../manifest.json"),
       "utf8",
       (err, data) => {
         if (err) return console.error(err);
@@ -43,7 +43,7 @@ router.get("/manifest", async (req, res) => {
 router.get("/generalInfo", async (_req, res) => {
   try {
     const manifestFile = fs.readFileSync(
-      path.join(__dirname, "../../manifest.json"),
+      path.join(__dirname, "../manifest.json"),
       "utf8",
       (err, data) => {
         if (err) return console.error(err);
@@ -62,7 +62,7 @@ router.get("/generalInfo", async (_req, res) => {
 router.get("/weather", async (_req, res) => {
   try {
     const weatherFile = fs.readFileSync(
-      path.join(__dirname, "../../weather.json"),
+      path.join(__dirname, "../weather.json"),
       "utf8",
       (err, data) => {
         if (err) return console.error(err);
