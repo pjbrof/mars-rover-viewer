@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Manrope", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000;
+  margin: 0;
+  font-size: 16px;
+}
+
+.image-container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.tooltip {
+  max-width: 300px;
+}
+
+.tooltip-icon {
+  margin-left: 3px;
+  cursor: pointer;
+}
+
+.centered {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.status {
+  margin-top: 2px;
+  margin-left: 10px;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 10px;
+}
+
+.status.active {
+  background-color: lime;
+}
+
+.status.inactive {
+  background-color: red;
+}
+
+.react-slideshow-container .nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.react-slideshow-container .nav:first-child {
+  left: 0;
+}
+
+.react-slideshow-container .nav:last-child {
+  right: 0;
+}
+
+.sol {
+  display: inline-block;
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  padding: 5px 15px;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.sol:after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  top: 0.125em;
+  right: 0.125em;
+  bottom: 0.125em;
+  left: 0.125em;
+  background-color: #fff;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.display-panel {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  padding: 24px;
+  z-index: 9999;
+  color: #fff;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.display-panel h3 {
+  margin-top: 2rem;
+  font-size: 12px;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.display-panel span {
+  text-transform: none;
+}
+
+.display-panel p {
+  margin: 3px 0;
+}
+
+.control-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 60px;
+  padding: 24px;
+  z-index: 9999;
+  color: #fff;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.control-panel button {
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.control-panel button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
+
+.react-slideshow-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.react-slideshow-container .nav {
+  z-index: 10;
+}
+.react-slideshow-container .default-nav {
+  height: 30px;
+  background: rgba(255, 255, 255, 0.6);
+  width: 30px;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.react-slideshow-container .default-nav:hover,
+.react-slideshow-container .default-nav:focus {
+  background: #fff;
+  color: #666;
+  outline: 0;
+}
+.react-slideshow-container .default-nav.disabled:hover {
+  cursor: not-allowed;
+}
+.react-slideshow-container .default-nav:first-of-type {
+  margin-right: -30px;
+  border-right: 0;
+  border-top: 0;
+}
+.react-slideshow-container .default-nav:last-of-type {
+  margin-left: -30px;
+}
+.react-slideshow-container + ul.indicators {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.react-slideshow-container + ul.indicators li {
+  display: inline-block;
+  position: relative;
+  width: 7px;
+  height: 7px;
+  padding: 5px;
+  margin: 0;
+}
+.react-slideshow-container + ul.indicators .each-slideshow-indicator {
+  border: 0;
+  opacity: 0.25;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+}
+.react-slideshow-container + ul.indicators .each-slideshow-indicator:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  content: "";
+  background: #000;
+  text-align: center;
+}
+.react-slideshow-container + ul.indicators .each-slideshow-indicator:hover,
+.react-slideshow-container + ul.indicators .each-slideshow-indicator.active,
+.react-slideshow-container + ul.indicators .each-slideshow-indicator:focus {
+  opacity: 0.75;
+  outline: 0;
+}
+.react-slideshow-fade-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.react-slideshow-fade-wrapper .react-slideshow-fade-images-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.react-slideshow-fade-wrapper .react-slideshow-fade-images-wrap > div {
+  position: relative;
+  opacity: 0;
+}
+.react-slideshow-wrapper
+  .react-slideshow-fade-images-wrap
+  > div[aria-hidden="true"] {
+  display: none;
+}
+.react-slideshow-wrapper.slide {
+  width: 100%;
+  overflow: hidden;
+}
+.react-slideshow-wrapper .images-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.react-slideshow-wrapper .images-wrap > div[aria-hidden="true"] {
+  display: none;
+}
+.react-slideshow-zoom-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.react-slideshow-zoom-wrapper .zoom-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.react-slideshow-zoom-wrapper .zoom-wrapper > div {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.react-slideshow-zoom-wrapper .zoom-wrapper > div[aria-hidden="true"] {
+  display: none;
+}

@@ -1,29 +1,29 @@
 import React, { useContext } from "react";
 import { Fade } from "react-slideshow-image";
-import { store } from "../store";
-
-import "./Slideshow.css";
+import { Context } from "./store";
 
 const fadeProperties = {
   duration: 10000,
   transitionDuration: 2000,
   infinite: true,
   indicators: false,
+  pauseOnHover: true,
 };
 
 const Slideshow = () => {
-  const nasa = useContext(store);
+  const { store } = useContext(Context);
+  const { photos } = store;
   return (
     <div className="slide-container">
-      {nasa.state.photos && (
+      {photos && (
         <Fade {...fadeProperties}>
-          {nasa.state.photos.map((value, index) => {
-            console.log(value.img_src);
+          {photos.map((value) => {
             return (
-              <div key={value.id} className="image-container">
-                <h2 className="sol">Sol {index + 1}</h2>
-                <img src={value.img_src} draggable="false" />
-              </div>
+              <div
+                key={value.id}
+                className="image-container"
+                style={{ backgroundImage: `url(${value.img_src})` }}
+              />
             );
           })}
         </Fade>

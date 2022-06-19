@@ -13,18 +13,13 @@ module.exports = {
     extensions: [".jsx", ".mjs", ".js", ".json"],
   },
   devServer: {
-    contentBase: path.join(__dirname, "public"),
+    static: path.join(__dirname, "public"),
     compress: true,
     port: 8080,
-    // headers: {
-    //   "Access-Control-Allow-Origin": "*",
-    //   "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-    //   "Access-Control-Allow-Headers":
-    //     "X-Requested-With, content-type, Authorization",
-    // },
-  },
-  node: {
-    fs: "empty",
+    hot: true,
+    proxy: {
+      "/api": "http://localhost:3000",
+    },
   },
   module: {
     rules: [

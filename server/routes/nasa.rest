@@ -1,0 +1,13 @@
+GET http://localhost:3000/api/v1/nasa/manifest?sol=1000
+
+###
+
+GET http://localhost:3000/api/v1/nasa/photos?sol=1&camera=NAVCAM
+
+###
+
+GET http://localhost:3000/api/v1/nasa/generalInfo
+
+###
+
+GET http://localhost:3000/api/v1/nasa/weather
